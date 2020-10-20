@@ -1,0 +1,15 @@
+"use strict";
+exports.__esModule = true;
+var book_1 = require("./book");
+var library_1 = require("./library");
+var libro1 = new book_1.Book("Introducción a Javascript", 223, "2344433 - BC23333", "Joseph Smith", "Now Editions");
+var libro2 = new book_1.Book("Palomo", 2433, "23338233 - LA23333", "Jaime Ross", "Baatimovil");
+var libro3 = new book_1.Book("Patria", 343, "2345533 - BC44333", "Jaime Ross", "La Farola");
+var libro4 = new book_1.Book("Yo", 777, "2345533 - CR77333", "Jaime Ross", "La Champions");
+var miBiblio = new library_1.Library([libro1, libro2, libro3, libro4], "Aragón 174, Barcelona", "Mauro Gómez");
+console.log(miBiblio.getFindByAuthor("Jaime Ross"));
+console.log(miBiblio.getAddress());
+console.log(miBiblio.getManager());
+console.log(miBiblio.getToString());
+console.log(miBiblio.getNumberOfBooks());
+console.log(miBiblio.getFindByAuthor("Jaime Ross"));
